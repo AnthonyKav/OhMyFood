@@ -1,0 +1,34 @@
+.functioning {
+    display: flex;
+    flex-direction: column;
+    
+}
+.functioning__step {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    margin: 15px 16px;
+    border-radius: 20px;
+    border: none;
+    gap: 4%;
+    background-color: #f6f6f6;
+    box-shadow: 0 4px 10px 0 #d5d5d5;
+}
+.functioning__step--number {
+    border-radius: 50%;
+    position: relative;
+    left: -8px;
+
+}
+.functioning__step--subtitle{
+
+    font-weight: 700;
+}
+.functioning__step--icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20px;
+   height: 25px;
+   color: #7E7E7E 
+}

@@ -1,0 +1,28 @@
+.location {
+display: flex;
+background-color: #eaeaea;
+justify-content: center;
+padding: 15px;
+
+}
+.location__icon {
+    margin-right: 10px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.location__input {
+    display: flex;
+    margin-left: 10px;
+  
+
+}
+.location__input--text {
+border: none;
+outline: none;
+background: #eaeaea;
+font-weight: 700;
+
+
+}

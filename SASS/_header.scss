@@ -1,0 +1,13 @@
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+    .header__logo {
+        padding: 10px;
+}
+    .header__logo img {
+    width: 200px;
+    margin-top: 10px;
+    }
