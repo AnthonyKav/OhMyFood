@@ -4,13 +4,12 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-    .header__logo {
-        padding: 10px;
-}
-    .header__logo img {
+
+.header__logo img {
     width: 200px;
     margin-top: 10px;
-    }
+    padding: 10px;
+}
 .header__menu {
     align-items: center;
     display: flex;

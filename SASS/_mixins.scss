@@ -1,4 +1,19 @@
 @mixin cursive__logo {
     font-size: 27px;
+    font-family: "Shrikhand", cursive;
     
+}
+
+/**** Responsive ****/
+
+@mixin table__responsive {
+    @media all and (min-width: map-get($breakpoints, table)) {
+        @content;
+    }
+}
+
+@mixin desktop__responsive {
+    @media all and (min-width: map-get($breakpoints, desktop)) {
+        @content
+    }
 }

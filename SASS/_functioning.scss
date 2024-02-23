@@ -3,7 +3,7 @@
     flex-direction: column;
     
 }
-.functioning__step {
+&__step {
     display: flex;
     align-items: center;
     height: 72px;
@@ -14,17 +14,17 @@
     background-color: #f6f6f6;
     box-shadow: 0 4px 10px 0 #d5d5d5;
 }
-.functioning__step--number {
+&__step--number {
     border-radius: 50%;
     position: relative;
     left: -8px;
 
 }
-.functioning__step--subtitle{
+&__step--subtitle{
 
     font-weight: 700;
 }
-.functioning__step--icon{
+&__step--icon {
    display: flex;
    justify-content: center;
    align-items: center;

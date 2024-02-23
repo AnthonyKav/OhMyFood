@@ -2,29 +2,30 @@
     width: 100%;
     padding: 22px 25px;
     background-color: #404040;
-    color: #ffffff;
+    color: $white;
 }
-.footer p {
+  & p {
     margin: 5px 0;
   }
-  .footer__logo {
+  &__logo {
     margin: 0 0 16px 0;
     font-size: 27px;
     font-family: "Shrikhand", cursive;
-    font-size: 18px;
+    
   }
-  .footer__bloc {
+  &__bloc {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
   }
 
-.footer__nav {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  gap: 7px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 7px;
+ 
 } 
-.footer__nav--icons {
+  &__nav--icons {
     display: flex;
     justify-content: center;
     align-items: center;

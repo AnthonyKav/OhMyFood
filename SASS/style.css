@@ -75,6 +75,7 @@ body {
   font-weight: 700;
 }
 
+/**** color ****/
 .explore__title h2 {
   font-weight: 700;
   text-align: center;
@@ -188,7 +189,6 @@ body {
   margin: 0 0 16px 0;
   font-size: 27px;
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
 }
 
 .footer__bloc {
@@ -322,4 +322,14 @@ body {
 .race-cards__price p {
   margin: 0;
   font-weight: 500;
+}
+
+/**** Responsive ****/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */

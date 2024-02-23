@@ -5,20 +5,20 @@ justify-content: center;
 padding: 15px;
 
 }
-.location__icon {
+&__icon {
     margin-right: 10px;
     margin-left: 40px;
     display: flex;
     align-items: center;
 
 }
-.location__input {
+&__input {
     display: flex;
     margin-left: 10px;
   
 
 }
-.location__input--text {
+&__input--text {
 border: none;
 outline: none;
 background: #eaeaea;
