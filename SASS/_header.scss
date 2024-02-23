@@ -11,3 +11,13 @@
     width: 200px;
     margin-top: 10px;
     }
+.header__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+.header__menu--icon {
+    width: 25px;
+    padding-left: 18px;
+}

@@ -13,6 +13,11 @@
   color: red;
 }
 
+.slight__orderbtn {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   align-items: center;
   display: flex;
@@ -27,6 +32,17 @@
 .header__logo img {
   width: 200px;
   margin-top: 10px;
+}
+
+.header__menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.header__menu--icon {
+  width: 25px;
+  padding-left: 18px;
 }
 
 body {
@@ -194,4 +210,116 @@ body {
   width: 16px;
   height: 13px;
   font-size: 13px;
+}
+
+.page__restaurant--img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.page__restaurant--img img {
+  width: 100%;
+  height: 107%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.slight {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 25px 25px 0px 0px;
+  padding: 2% 5% 5% 5%;
+  z-index: 0;
+}
+
+.slight__heading {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.slight__heading h2 {
+  width: 87%;
+  font-size: 24px;
+  font-family: "Shrikhand", cursive;
+}
+
+.race-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.race-list__heading {
+  position: relative;
+  margin: 4% 0% 2% 0%;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.race-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.race-cards__info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2%;
+  gap: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-cards__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 5px;
+}
+
+.race-cards__description h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-cards__description p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-cards__price {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+  padding: 5px;
+}
+
+.race-cards__price p {
+  margin: 0;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
