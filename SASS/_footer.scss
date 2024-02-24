@@ -3,16 +3,18 @@
     padding: 22px 25px;
     background-color: #404040;
     color: $white;
-}
-  & p {
+
+  p {
     margin: 5px 0;
   }
   &__logo {
     margin: 0 0 16px 0;
-    font-size: 27px;
-    font-family: "Shrikhand", cursive;
-    
+   font-size: 27px;
+   font-family: "Shrikhand",cursive;
   }
+   
+    
+  
   &__bloc {
     display: flex;
     flex-direction: column; 
@@ -23,8 +25,8 @@
     align-items: center;
     font-weight: 500;
     gap: 7px;
+  }
  
-} 
   &__nav--icons {
     display: flex;
     justify-content: center;
@@ -33,3 +35,6 @@
     height: 13px;
     font-size: 13px;
   }
+}
+  
+ 

@@ -1,12 +1,18 @@
 .explore__button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* Couleur de fond */
-  color: #fff; /* Couleur du texte */
-  text-decoration: none; /* Suppression du soulignement du lien */
-  border: none; /* Suppression de la bordure */
-  border-radius: 5px; /* Arrondi des bords */
-  cursor: pointer; /* Curseur de la souris */
+  width: 218px;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  background-color: #FF79DA;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 27px 75px 57px 82px;
+  transition: opacity 300ms ease-in-out;
+}
+.explore__button:hover {
+  opacity: 0.88;
 }
 
 .button__like {
@@ -25,13 +31,10 @@
   flex-wrap: wrap;
 }
 
-.header__logo {
-  padding: 10px;
-}
-
 .header__logo img {
   width: 200px;
   margin-top: 10px;
+  padding: 10px;
 }
 
 .header__menu {
@@ -55,19 +58,16 @@ body {
   justify-content: center;
   padding: 15px;
 }
-
 .location__icon {
   margin-right: 10px;
   margin-left: 40px;
   display: flex;
   align-items: center;
 }
-
 .location__input {
   display: flex;
   margin-left: 10px;
 }
-
 .location__input--text {
   border: none;
   outline: none;
@@ -76,56 +76,76 @@ body {
 }
 
 /**** color ****/
-.explore__title h2 {
-  font-weight: 700;
-  text-align: center;
-  font-size: 30px;
-}
-
+/**** Degree Gradient ****/
+/**** width ****/
+/**** Responsive ****/
 .explorebox {
-  background-color: red;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-}
-
-.explorebox a {
-  margin: 58px;
-  margin-top: -4px;
-  margin-bottom: 26px;
-}
-
-.explore__title p {
   text-align: center;
-  font-size: 20px;
+  padding: 5px;
+}
+.explorebox__title {
+  width: 70%;
+  margin: 10px 0;
+  font-size: 26px;
+  align-items: center;
+  display: flex;
+}
+.explorebox p {
+  width: 85%;
+  margin-left: 17px;
+  font-size: 18px;
+  align-items: center;
 }
 
 .functioning {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+.functioning h3 {
+  margin-left: 36px;
+  display: flex;
+}
+.functioning__list {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: 95%;
+  padding-bottom: 10px;
+  margin: auto;
 }
-
 .functioning__step {
   display: flex;
   align-items: center;
   height: 72px;
-  margin: 15px 16px;
+  margin: 15px 30px;
   border-radius: 20px;
   border: none;
   gap: 4%;
   background-color: #f6f6f6;
   box-shadow: 0 4px 10px 0 #d5d5d5;
 }
-
 .functioning__step--number {
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   position: relative;
-  left: -8px;
+  left: -19px;
+  bottom: -5px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #9356DC;
+  padding: 1%;
 }
-
 .functioning__step--subtitle {
   font-weight: 700;
 }
-
 .functioning__step--icon {
   display: flex;
   justify-content: center;
@@ -180,29 +200,24 @@ body {
   background-color: #404040;
   color: #ffffff;
 }
-
 .footer p {
   margin: 5px 0;
 }
-
 .footer__logo {
   margin: 0 0 16px 0;
   font-size: 27px;
   font-family: "Shrikhand", cursive;
 }
-
 .footer__bloc {
   display: flex;
   flex-direction: column;
 }
-
 .footer__nav {
   display: flex;
   align-items: center;
   font-weight: 500;
   gap: 7px;
 }
-
 .footer__nav--icons {
   display: flex;
   justify-content: center;
@@ -324,6 +339,9 @@ body {
   font-weight: 500;
 }
 
+/**** Responsive ****/
+/**** Shadow ****/
+/**** gradient ****/
 /**** Responsive ****/
 * {
   font-family: "Roboto", sans-serif;
