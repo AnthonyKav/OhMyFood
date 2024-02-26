@@ -1,55 +1,57 @@
+@import"./mixins";
+
 .functioning {
     width: 90%;
     margin: auto;
     padding: 50px 0;
-h3 {
-    margin-left: 36px;
-    display: flex;
-}
-&__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 95%;
-    padding-bottom: 10px;
-    margin: auto;
-}
-&__step {
-    display: flex;
-    align-items: center;
-    height: 72px;
-    margin: 15px 30px;
-    border-radius: 20px;
-    border: none;
-    gap: 4%;
-    background-color: #f6f6f6;
-    box-shadow: 0 4px 10px 0 #d5d5d5;
- }
-&__step--number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    left: -19px;
-    bottom: -5px;
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    color: #ffffff;
-    background-color: #9356DC;
-    padding: 1%;
-}
-&__step--subtitle {
+    h3 {
+        margin-left: 36px;
+        display: flex;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 95%;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+    &__step {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        margin: 15px 30px;
+        border-radius: 20px;
+        border: none;
+        gap: 4%;
+        background-color: $white;
+        box-shadow: 0 4px 10px 0 #d5d5d5;
+    }
+    &__step--number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        left: -19px;
+        bottom: -5px;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        color: $LightGray;
+        background-color: #9356DC;
+        padding: 1%;
+    }
+    &__step--subtitle {
 
-    font-weight: 700;
- }
-&__step--icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 20px;
-   height: 25px;
-   color: #7E7E7E 
- }
+        font-weight: 700;
+    }
+    &__step--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 25px;
+    color: #7E7E7E 
+    }
 }

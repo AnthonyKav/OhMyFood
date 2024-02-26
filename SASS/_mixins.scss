@@ -2,20 +2,24 @@
 
 /**** Responsive ****/
 
-@mixin table__responsive {
-    @media all and (min-width: map-get($breakpoints, table)) {
-        @content;
-    }
+// @mixin table__responsive($breakpoints) {
+//     @media all and (min-width: map-get($breakpoints, table)) {
+//         @content;
+//     }
+// }
+
+// @mixin desktop__responsive($breakpoints) {
+//     @media all and (min-width: map-get($breakpoints, desktop)) {
+//         @content;
+//     }
+// }
+/**** Shadow ****/
+@mixin object_shadow($color) {
+    box-shadow: 0 4px 10px 0 $color;
 }
 
-@mixin desktop__responsive {
-    @media all and (min-width: map-get($breakpoints, desktop)) {
-        @content
-    }
-}
-/**** Shadow ****/
-@mixin object-shadow {
-    box-shadow: 0 4px 10px 0 $color;
+@mixin textColor($color){
+    color: $color !important;
 }
 
 /**** gradient ****/
@@ -25,14 +29,14 @@
 
 /**** Responsive ****/
 
-@mixin table__responsive {
-    @media all and (min-width: map-get($breakpoints, table)) {
-        @content;
-    }
-}
+// @mixin table__responsive($breakpoints) {
+//     @media all and (min-width: map-get($breakpoints, table)) {
+//         @content;
+//     }
+// }
 
-@mixin desktop__responsive {
-    @media all and (min-width: map-get($breakpoints, desktop)) {
-        @content
-    }
-}
+// @mixin desktop__responsive {
+//     @media all and (min-width: map-get($breakpoints, desktop)) {
+//         @content
+//     }
+// }

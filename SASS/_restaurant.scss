@@ -4,31 +4,38 @@
     margin: auto;
     padding: 20px 0 66px 0;
     background-color: #F6F6F6;
-}
-.restaurant__bloc {
+
+&__bloc {
     width: 90%;
     margin: auto;
 }
-.restaurant__cards {
+&__title{
+    padding: 28px;
+    margin-bottom: -10px;
+    font-size: 31px;
+}
+&__cards {
     display: flex;
     flex-direction: column;
     position: relative;
     height: 251px;
+    padding-bottom: 25px;
     margin: auto;
     margin-bottom: 18px;
     border-radius: 15px;
     background-color: #ffffff;
     box-shadow: 0 4px 10px 0 #d5d5d5;
 }
-.restaurant__cards--img {
+&__cards--img {
     position: relative;
     overflow: hidden;
     height: 175px;
     border-radius: 15px 15px 0px 0px;
 }
-.restaurant__cards--img img {
+&__cards--img img {
     width: 100%;
     height: 175px;
     -o-object-fit: cover;
        object-fit: cover;
+}
 }
