@@ -53,6 +53,17 @@
     text-transform: uppercase;
     // text transform permet de changer la manière dont est écrit le texte ici tout en capitale
 }
+.race-list__heading::after {
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #99E2D0;
+  }
+//   le ::after permet d'afficher la bordure verte après le heading H3 . Content "" signifie que le content est  vide mais contient un trait . 
+
 .race-cards {
     position: relative;
     display: flex;

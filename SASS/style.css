@@ -25,7 +25,7 @@
 }
 
 .button__like {
-  color: red;
+  color: #353535;
   position: absolute;
   top: 216px;
   right: 2px;
@@ -34,7 +34,7 @@
   display: flex;
   border: transparent 0px solid;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .header {
@@ -199,7 +199,7 @@ body {
   flex-direction: column;
   position: relative;
   height: 251px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   margin: auto;
   margin-bottom: 18px;
   border-radius: 15px;
@@ -237,6 +237,15 @@ body {
   position: absolute;
   right: 7%;
   font-size: 25px;
+}
+.restaurant__cards--info {
+  font-size: 25px;
+  margin-top: -29px;
+  padding-left: 13px;
+}
+.restaurant p {
+  margin-top: 15px;
+  position: relative;
 }
 
 .footer {
@@ -325,6 +334,16 @@ body {
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.race-list__heading::after {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #99E2D0;
 }
 
 .race-cards {

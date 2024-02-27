@@ -22,7 +22,7 @@
     }
 }
 .button__like {
-    color: red;
+    color: $black;
     position: absolute;
     top: 216px;
     right: 2px;
@@ -31,7 +31,7 @@
     display: flex;
     border: transparent 0px solid;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 35px;
    
 }
 
