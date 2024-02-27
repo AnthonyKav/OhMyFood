@@ -1,15 +1,20 @@
+@import"./_variable.scss";
+@import"./_mixins.scss";
+
+
 .explore__button {
     width: 218px;
     height: 50px;
-    color: #fff;
+    color: $white;
     font-size: 16px;
     border-radius: 25px;
     border: none;
-    background-color: #FF79DA;
     font-weight: 500;
     cursor: pointer;
-    margin: 27px 75px 57px 82px;
+    margin: 13px 75px 38px 40px;
     transition: opacity 300ms ease-in-out;
+    @include gradient;
+    position: relative;
 
     &:hover {
         opacity: 0.88;
@@ -18,8 +23,16 @@
 }
 .button__like {
     color: red;
-}
-.slight__orderbtn {
+    position: absolute;
+    top: 216px;
+    right: 2px;
+    width: 21px;
+    height: 41px;
     display: flex;
-    justify-content: center;
-  }
+    border: transparent 0px solid;
+    background-color: transparent;
+    font-size: 25px;
+   
+}
+
+

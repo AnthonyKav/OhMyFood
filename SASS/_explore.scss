@@ -1,9 +1,10 @@
 .explorebox {
 background-color: darken(white,4%);
-display: flex;
-flex-direction: column;
+display: block;
+
 text-align: center;
-padding: 5px;
+padding: 16px;
+
 
 &__title {
     width: 70%;

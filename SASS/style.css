@@ -1,15 +1,24 @@
+/**** color ****/
+/**** Degree Gradient ****/
+/**** width ****/
+/**** Responsive ****/
+/**** Responsive ****/
+/**** Shadow ****/
+/**** gradient ****/
+/**** Responsive ****/
 .explore__button {
   width: 218px;
   height: 50px;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   border-radius: 25px;
   border: none;
-  background-color: #FF79DA;
   font-weight: 500;
   cursor: pointer;
-  margin: 27px 75px 57px 82px;
+  margin: 13px 75px 38px 40px;
   transition: opacity 300ms ease-in-out;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  position: relative;
 }
 .explore__button:hover {
   opacity: 0.88;
@@ -17,11 +26,15 @@
 
 .button__like {
   color: red;
-}
-
-.slight__orderbtn {
+  position: absolute;
+  top: 216px;
+  right: 2px;
+  width: 21px;
+  height: 41px;
   display: flex;
-  justify-content: center;
+  border: transparent 0px solid;
+  background-color: transparent;
+  font-size: 25px;
 }
 
 .header {
@@ -81,10 +94,9 @@ body {
 /**** Responsive ****/
 .explorebox {
   background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
+  display: block;
   text-align: center;
-  padding: 5px;
+  padding: 16px;
 }
 .explorebox__title {
   width: 70%;
@@ -129,7 +141,7 @@ body {
   border-radius: 20px;
   border: none;
   gap: 4%;
-  background-color: #ffffff;
+  background-color: #F6F6F6;
   box-shadow: 0 4px 10px 0 #d5d5d5;
 }
 .functioning__step--number {
@@ -159,11 +171,18 @@ body {
   color: #7E7E7E;
 }
 
+/**** color ****/
+/**** Degree Gradient ****/
+/**** width ****/
+/**** Responsive ****/
+/**** Responsive ****/
+/**** Shadow ****/
+/**** gradient ****/
+/**** Responsive ****/
 .restaurant {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 20px 0 66px 0;
   background-color: #F6F6F6;
 }
 .restaurant__bloc {
@@ -193,11 +212,31 @@ body {
   height: 175px;
   border-radius: 15px 15px 0px 0px;
 }
+.restaurant__cards--img--markerinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 93px;
+  height: 31px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: 500;
+  font-size: 17px;
+}
 .restaurant__cards--img img {
   width: 100%;
   height: 175px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.restaurant__cards--like {
+  position: absolute;
+  right: 7%;
+  font-size: 25px;
 }
 
 .footer {
@@ -253,17 +292,24 @@ body {
   padding: 2% 5% 5% 5%;
   z-index: 0;
 }
-
 .slight__heading {
   display: flex;
   align-items: center;
   margin: auto;
 }
-
 .slight__heading h2 {
   width: 87%;
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Shrikhand", cursive;
+}
+.slight__orderbtn {
+  display: flex;
+  justify-content: center;
+}
+.slight__heading--heart {
+  position: absolute;
+  top: -182px;
+  right: 46px;
 }
 
 .race-list {

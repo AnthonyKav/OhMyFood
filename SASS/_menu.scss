@@ -16,17 +16,29 @@
     padding: 2% 5% 5% 5%;
     z-index: 0;
     // le Z index sert a faire passer la div par dessus l'image 
-  }
-.slight__heading {
+  
+&__heading {
     display: flex;
     align-items: center;
     margin: auto;
 }
-.slight__heading h2 {
+&__heading h2 {
     width: 87%;
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Shrikhand", cursive;
 }
+&__orderbtn{
+    display: flex;
+    justify-content: center;
+}
+&__heading--heart{
+    position: absolute;
+    top: -182px;
+    right: 46px;
+} 
+}
+
+
 .race-list {
     display: flex;
     flex-direction: column;

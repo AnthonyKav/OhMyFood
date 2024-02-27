@@ -18,9 +18,7 @@
     box-shadow: 0 4px 10px 0 $color;
 }
 
-@mixin textColor($color){
-    color: $color !important;
-}
+
 
 /**** gradient ****/
 @mixin gradient ($oriantation: $degree) {
