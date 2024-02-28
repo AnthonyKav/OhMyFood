@@ -1,16 +1,22 @@
+@import"./_variable.scss";
+@import"./_mixins.scss";
 .footer {
-    width: 100%;
+    width: auto;
     padding: 22px 25px;
-    background-color: #404040;
+    background-color:darken($white, 75%);
     color: $white;
+   
+
 
   p {
     margin: 5px 0;
+    max-width: fit-content;
   }
   &__logo {
     margin: 0 0 16px 0;
    font-size: 27px;
    font-family: "Shrikhand",cursive;
+   max-width: fit-content;
   }
    
     
@@ -18,6 +24,9 @@
   &__bloc {
     display: flex;
     flex-direction: column; 
+    position: relative;
+    padding: 1rem;
+    max-width: fit-content;
   }
 
   &__nav {
@@ -25,6 +34,7 @@
     align-items: center;
     font-weight: 500;
     gap: 7px;
+    max-width: fit-content;
   }
  
   &__nav--icons {

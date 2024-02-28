@@ -62,7 +62,9 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  width: 100%;
+  display: block;
 }
 
 .location {
@@ -248,29 +250,47 @@ body {
   position: relative;
 }
 
+/**** color ****/
+/**** Degree Gradient ****/
+/**** width ****/
+/**** Responsive ****/
+/**** Responsive ****/
+/**** Shadow ****/
+/**** gradient ****/
+/**** Responsive ****/
 .footer {
-  width: 100%;
+  width: auto;
   padding: 22px 25px;
   background-color: #404040;
   color: #ffffff;
 }
 .footer p {
   margin: 5px 0;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .footer__logo {
   margin: 0 0 16px 0;
   font-size: 27px;
   font-family: "Shrikhand", cursive;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .footer__bloc {
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .footer__nav {
   display: flex;
   align-items: center;
   font-weight: 500;
   gap: 7px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .footer__nav--icons {
   display: flex;
