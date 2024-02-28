@@ -90,10 +90,6 @@ body {
   font-weight: 700;
 }
 
-/**** color ****/
-/**** Degree Gradient ****/
-/**** width ****/
-/**** Responsive ****/
 .explorebox {
   background-color: whitesmoke;
   display: block;
@@ -217,14 +213,10 @@ body {
   border-radius: 15px 15px 0px 0px;
 }
 .restaurant__cards--img--markerinfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px 15px;
   position: absolute;
   right: 15px;
   top: 12px;
-  width: 93px;
-  height: 31px;
   border-radius: 2px;
   background-color: #99E2D0;
   color: #278870;
@@ -429,10 +421,6 @@ body {
   font-weight: 500;
 }
 
-/**** Responsive ****/
-/**** Shadow ****/
-/**** gradient ****/
-/**** Responsive ****/
 * {
   font-family: "Roboto", sans-serif;
 }

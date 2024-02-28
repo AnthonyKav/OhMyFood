@@ -34,14 +34,13 @@
     border-radius: 15px 15px 0px 0px;
 }
 &__cards--img--markerinfo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
+ 
+    padding: 10px 15px;
     position: absolute;
     right: 15px;
     top: 12px;
-    width: 93px;
-    height: 31px;
+
     border-radius: 2px;
     background-color: $color-tertiary;
     color: darken($color-tertiary, 40%);
@@ -52,20 +51,25 @@
     width: 100%;
     height: 175px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
-&__cards--like{
-    position: absolute;
+&__cards {
+    &--like{
+        position: absolute;
         
         right: 7%;
         font-size: 25px;
-}
-&__cards--info {
-    font-size: 25px;
+
+    }
+    &--info{
+        font-size: 25px;
     margin-top: -29px;
     padding-left: 13px;
 
+    }
+    
 }
+
 & p{
     margin-top: 15px;
     position: relative;
