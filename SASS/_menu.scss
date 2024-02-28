@@ -3,6 +3,7 @@
     width: 100%;
     height: 250px;
 }
+
 .page__restaurant--img img {
     width: 100%;
     height: 107%;
@@ -35,6 +36,9 @@
     position: absolute;
     top: -182px;
     right: 46px;
+}
+&__container{
+    margin: -10px;
 } 
 }
 
@@ -43,8 +47,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-} 
-.race-list__heading {
+ 
+&__heading {
     position: relative;
     margin: 4% 0% 2% 0%;
     padding: 10px 0px;
@@ -53,7 +57,7 @@
     text-transform: uppercase;
     // text transform permet de changer la manière dont est écrit le texte ici tout en capitale
 }
-.race-list__heading::after {
+&__heading::after {
     display: block;
     position: absolute;
     bottom: 2px;
@@ -62,6 +66,7 @@
     height: 4px;
     background-color: #99E2D0;
   }
+}
 //   le ::after permet d'afficher la bordure verte après le heading H3 . Content "" signifie que le content est  vide mais contient un trait . 
 
 .race-cards {
@@ -76,8 +81,8 @@
     box-shadow: 0 4px 10px 0 #d5d5d5;
     overflow: hidden;
     cursor: pointer;
-}
-.race-cards__info {
+
+&__info {
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -88,37 +93,40 @@
     overflow: hidden;
     text-overflow: ellipsis;
     // affichage des ... une fois que le slide va arriver
+    padding: 5px;
 }
-.race-cards__description {
+&__description {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
     padding: 5px;
 }
-.race-cards__description h4 {
+&__description h4 {
     margin: 0;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.race-cards__description p {
+&__description p {
     margin: 0;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 18px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.race-cards__price {
+&__price {
     display: flex;
     align-items: flex-end;
     width: 15%;
     padding: 5px;
+    font-size: 20px;
 }
-.race-cards__price p {
+&__price p {
     margin: 0;
     font-weight: 500;
+}
 }

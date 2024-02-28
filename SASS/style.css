@@ -107,8 +107,10 @@ body {
   align-items: center;
   display: flex;
 }
+.explorebox h2 {
+  font-size: 36px;
+}
 .explorebox p {
-  width: 85%;
   margin-left: 17px;
   font-size: 18px;
   align-items: center;
@@ -119,13 +121,13 @@ body {
 /**** gradient ****/
 /**** Responsive ****/
 .functioning {
-  width: 90%;
   margin: auto;
-  padding: 50px 0;
+  padding: 22px 0;
 }
 .functioning h3 {
   margin-left: 36px;
   display: flex;
+  font-size: 28px;
 }
 .functioning__list {
   display: flex;
@@ -340,13 +342,15 @@ body {
   top: -182px;
   right: 46px;
 }
+.slight__container {
+  margin: -10px;
+}
 
 .race-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .race-list__heading {
   position: relative;
   margin: 4% 0% 2% 0%;
@@ -355,7 +359,6 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
-
 .race-list__heading::after {
   display: block;
   position: absolute;
@@ -379,7 +382,6 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-
 .race-cards__info {
   display: flex;
   flex: 1;
@@ -390,8 +392,8 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 5px;
 }
-
 .race-cards__description {
   white-space: nowrap;
   overflow: hidden;
@@ -399,32 +401,29 @@ body {
   width: 100%;
   padding: 5px;
 }
-
 .race-cards__description h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .race-cards__description p {
   margin: 0;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .race-cards__price {
   display: flex;
   align-items: flex-end;
   width: 15%;
   padding: 5px;
+  font-size: 20px;
 }
-
 .race-cards__price p {
   margin: 0;
   font-weight: 500;

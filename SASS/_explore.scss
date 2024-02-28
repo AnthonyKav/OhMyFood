@@ -13,11 +13,14 @@ padding: 16px;
     align-items: center;
     display: flex;
 }
+& h2 {
+    font-size: 36px;
+}
 & p {
-    width: 85%;
+    
     margin-left: 17px;
     font-size: 18px;
     align-items: center;
-
 }
+
 }
