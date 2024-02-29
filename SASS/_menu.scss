@@ -124,6 +124,13 @@
     box-shadow: 0 4px 10px 0 #d5d5d5;
     overflow: hidden;
     cursor: pointer;
+    &:hover>&__checkout {
+        margin-right: 0px;
+
+        &::after {
+            transform: rotate(360deg);
+        }
+    }
 
 &__info {
     display: flex;
@@ -172,4 +179,27 @@
     margin: 0;
     font-weight: 500;
 }
+&__checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 20%;
+    margin-right: -20%;
+    border-radius: 0px 15px 15px 0px;
+    background-color: $color-tertiary;
+    transition: margin-right 800ms cubic-bezier(.63, 1.23, .96, .92);
+
+    &::after {
+        display: inline-block;
+        margin: auto;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 25px;
+        content: "\f058";
+        color: $white;
+        transition: transform 800ms cubic-bezier(.63, 1.23, .96, .92);
+    }
+}
+
 }
