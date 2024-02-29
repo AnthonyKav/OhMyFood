@@ -1,10 +1,16 @@
-@import"./_variable.scss";
-@import"./_mixins.scss";
 .footer {
     width: auto;
     padding: 22px 25px;
     background-color:darken($white, 75%);
     color: $white;
+    @include table__responsive{
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      height: 114px;
+      gap: 16px;
+    }
    
 
 
@@ -27,6 +33,11 @@
     position: relative;
     padding: 1rem;
     max-width: fit-content;
+    @include table__responsive {
+      flex-direction: row;
+      align-items: center;
+      gap: 7px;
+  }
   }
 
   &__nav {
@@ -35,6 +46,9 @@
     font-weight: 500;
     gap: 7px;
     max-width: fit-content;
+    @include table__responsive {
+      width: 190px;
+  }
   }
  
   &__nav--icons {
@@ -45,6 +59,13 @@
     height: 13px;
     font-size: 13px;
   }
+  &__nav--info{
+    @include table__responsive {
+      & p {
+          width: 130px;
+          height: 20px;
+      }
+  }
 }
-  
+}  
  

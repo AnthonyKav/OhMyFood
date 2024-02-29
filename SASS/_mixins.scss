@@ -1,40 +1,28 @@
-
-
-/**** Responsive ****/
-
-// @mixin table__responsive($breakpoints) {
-//     @media all and (min-width: map-get($breakpoints, table)) {
-//         @content;
-//     }
-// }
-
-// @mixin desktop__responsive($breakpoints) {
-//     @media all and (min-width: map-get($breakpoints, desktop)) {
-//         @content;
-//     }
-// }
 /**** Shadow ****/
 @mixin object_shadow($color) {
     box-shadow: 0 4px 10px 0 $color;
 }
 
-
+/**** set-logo ****/
+@mixin cursive__logo {
+    font-size: 27px;
+    font-family: "Shrikhand",cursive;
+}
 
 /**** gradient ****/
 @mixin gradient ($oriantation: $degree) {
     background:linear-gradient( $degree, $color-primary, $color-secondary);
 }
 
-/**** Responsive ****/
+// /**** Responsive ****/
 
-// @mixin table__responsive($breakpoints) {
-//     @media all and (min-width: map-get($breakpoints, table)) {
-//         @content;
-//     }
-// }
-
-// @mixin desktop__responsive {
-//     @media all and (min-width: map-get($breakpoints, desktop)) {
-//         @content
-//     }
-// }
+@mixin table__responsive {
+     @media all and (min-width: map-get($breakpoints, table)) {
+        @content;
+     }
+}
+@mixin desktop__responsive {
+     @media all and (min-width: map-get($breakpoints, desktop)) {
+         @content
+     }
+}

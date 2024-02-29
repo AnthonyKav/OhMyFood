@@ -1,14 +1,32 @@
-@import"./_variable.scss";
-@import"./_mixins.scss";
 .restaurant {
     display: flex;
     flex-direction: column;
-    margin: auto;
+   
     background-color: $LightGray;
+    
 
 &__bloc {
     width: 90%;
     margin: auto;
+    
+    @include desktop__responsive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 75%;
+        margin: auto;        
+        gap: 40px;
+    }
+    @include table__responsive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 75%;
+        margin: auto;        
+        gap: 40px;        
+    }
 }
 &__title{
     padding: 28px;
@@ -26,6 +44,15 @@
     border-radius: 15px;
     background-color: #ffffff;
     box-shadow: 0 4px 10px 0 #d5d5d5;
+    @include desktop__responsive {
+        width: calc(50% - 40px)
+        // // le calc ici sert à espacer les cartes entre elles  elle est egale au gap du bloc parent 
+    }
+    @include table__responsive {
+        width: calc(50% - 40px)
+    }
+   
+       
 }
 &__cards--img {
     position: relative;
