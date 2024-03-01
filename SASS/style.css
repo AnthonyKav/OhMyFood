@@ -1,11 +1,69 @@
 @charset "UTF-8";
 /**** color ****/
 /**** Degree Gradient ****/
-/**** width ****/
 /**** Responsive ****/
 /**** Shadow ****/
 /**** set-logo ****/
 /**** gradient ****/
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background-color: #ffffff;
+  opacity: 0.9;
+  animation: disappear 0s 3s forwards;
+  display: grid;
+  place-items: center;
+}
+.loader__text {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #353535;
+}
+
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.loader-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+  flex-wrap: wrap;
+}
+.loader-dots .loader-dot {
+  width: 20%;
+  height: 20%;
+  margin: 0;
+  border-radius: 100%;
+  background-color: #9356DC;
+  animation: three 1s infinite ease-in-out both;
+  animation-delay: 0ms;
+}
+.loader-dots .loader-dot__2 {
+  animation-delay: 225ms;
+}
+.loader-dots .loader-dot__3 {
+  animation-delay: 450ms;
+}
+
+@keyframes three {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
 @keyframes heart-fill {
   0% {
     opacity: 0;
