@@ -28,3 +28,56 @@
         transform: scale(1);
     }
 }
+/* CSS pour les éléments d'entrée */
+.race-list:nth-child(1) .race-cards {
+    animation: appearEntrance 1.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* CSS pour les éléments de plat */
+  .race-list:nth-child(2) .race-cards {
+    animation: appearPlat 3.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* CSS pour les éléments de dessert */
+  .race-list:nth-child(3) .race-cards {
+    animation: appearDessert 5.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Animation pour les éléments d'entrée */
+  @keyframes appearEntrance {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation pour les éléments de plat */
+  @keyframes appearPlat {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation pour les éléments de dessert */
+  @keyframes appearDessert {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
