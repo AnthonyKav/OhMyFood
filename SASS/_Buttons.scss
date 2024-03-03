@@ -8,7 +8,7 @@
     border: none;
     font-weight: 500;
     cursor: pointer;
-    margin: 13px 75px 38px 40px;
+    margin: 13px auto 38px auto;
     transition: opacity 300ms ease-in-out;
     @include gradient;
     position: relative;
@@ -20,39 +20,43 @@
 }
 .button__like {
     color: $black;
-    position: absolute;
     top: 216px;
     right: 2px;
-    width: 21px;
-    height: 41px;
+    width: 50px;
+    height: 50px;
     display: flex;
     border: transparent 0px solid;
     background-color: transparent;
     font-size: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 
-&:focus {
-    &::after {
-        z-index: 1;
-        animation: heart-fill 900ms forwards cubic-bezier(.65,1.01,.98,1.06);
+    &:focus {
+        &::after {
+            z-index: 1;
+            animation: heart-fill 900ms forwards cubic-bezier(.65,1.01,.98,1.06);
+            position: absolute;
+        }
     }
-}
 
-&::after {
-    z-index: -1;
-    opacity: 0;
-    position: absolute;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 34px;
-    content: "\f004";
-    color: transparent;
-    @include gradient(45deg);
-    background-clip: text;
-    // propriété qui délimite le remplissage au contour du texte ( ici une icône )
-    transform-origin: bottom;
-    // Ici sertr à indiquer le remplissae se fait par le bas 
+    &::after {
+        z-index: -1;
+        opacity: 0;
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 35px;
+        content: "\f004";
+        color: transparent;
+        @include gradient(45deg);
+        background-clip: text;
+        // propriété qui délimite le remplissage au contour du texte ( ici une icône )
+        transform-origin: bottom;
+        // Ici sertr à indiquer le remplissae se fait par le bas 
 
-}
+    }
 }
 
