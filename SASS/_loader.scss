@@ -22,16 +22,7 @@
       color: $black;
     }
   }
-  
-  @keyframes disappear {
-    from {
-      transform: scale(1);  
-    }
-    to {
-        transform: scale(0);
-    }
-    // echelle 1 à 0 ( invisible)
-  }
+
   
   .loader-dots {
     display: flex;
@@ -60,11 +51,4 @@
     }
   }
    
-   @keyframes three {
-    0%, 80%, 100% {
-      transform:scale(0)
-    }
-    40% {
-      transform:scale(1);
-    }
-  }
+   

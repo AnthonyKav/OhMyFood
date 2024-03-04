@@ -24,14 +24,6 @@
   color: #353535;
 }
 
-@keyframes disappear {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
 .loader-dots {
   display: flex;
   align-items: center;
@@ -56,14 +48,6 @@
   animation-delay: 450ms;
 }
 
-@keyframes three {
-  0%, 80%, 100% {
-    transform: scale(0);
-  }
-  40% {
-    transform: scale(1);
-  }
-}
 @keyframes heart-fill {
   0% {
     opacity: 0;
@@ -91,24 +75,24 @@
 }
 /* CSS pour les éléments d'entrée */
 .race-list:nth-child(1) .race-cards {
-  animation: appearEntrance 1.5s ease forwards;
+  animation: appear 2.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de plat */
 .race-list:nth-child(2) .race-cards {
-  animation: appearPlat 3.5s ease forwards;
+  animation: appear 5.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de dessert */
 .race-list:nth-child(3) .race-cards {
-  animation: appearDessert 5.5s ease forwards;
+  animation: appear 7.5s ease forwards;
   opacity: 0;
 }
 
-/* Animation pour les éléments d'entrée */
-@keyframes appearEntrance {
+/* Animation pour les éléments menu */
+@keyframes appear {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -118,26 +102,20 @@
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de plat */
-@keyframes appearPlat {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
+@keyframes three {
+  0%, 80%, 100% {
+    transform: scale(0);
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  40% {
+    transform: scale(1);
   }
 }
-/* Animation pour les éléments de dessert */
-@keyframes appearDessert {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
+@keyframes disappear {
+  from {
+    transform: scale(1);
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  to {
+    transform: scale(0);
   }
 }
 .explore__button {
@@ -168,7 +146,7 @@
   border: transparent 0px solid;
   background-color: transparent;
   font-size: 35px;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,7 +417,7 @@ body {
   padding-left: 13px;
 }
 .restaurant p {
-  margin-top: 15px;
+  margin-top: -17px;
   position: relative;
 }
 

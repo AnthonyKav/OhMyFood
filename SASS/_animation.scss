@@ -30,24 +30,24 @@
 }
 /* CSS pour les éléments d'entrée */
 .race-list:nth-child(1) .race-cards {
-    animation: appearEntrance 2.5s ease forwards;
+    animation: appear 2.5s ease forwards;
     opacity: 0;
   }
   
   /* CSS pour les éléments de plat */
   .race-list:nth-child(2) .race-cards {
-    animation: appearPlat 5.5s ease forwards;
+    animation: appear 5.5s ease forwards;
     opacity: 0;
   }
   
   /* CSS pour les éléments de dessert */
   .race-list:nth-child(3) .race-cards {
-    animation: appearDessert 7.5s ease forwards;
+    animation: appear 7.5s ease forwards;
     opacity: 0;
   }
   
-  /* Animation pour les éléments d'entrée */
-  @keyframes appearEntrance {
+  /* Animation pour les éléments menu */
+  @keyframes appear {
     0% {
       opacity: 0;
       transform: translateY(-20px);
@@ -58,26 +58,22 @@
     }
   }
   
-  /* Animation pour les éléments de plat */
-  @keyframes appearPlat {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+// Loader //
+@keyframes three {
+  0%, 80%, 100% {
+    transform:scale(0)
   }
+  40% {
+    transform:scale(1);
+  }
+}
   
-  /* Animation pour les éléments de dessert */
-  @keyframes appearDessert {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes disappear {
+  from {
+    transform: scale(1);  
   }
+  to {
+      transform: scale(0);
+  }
+  // echelle 1 à 0 ( invisible)
+}
