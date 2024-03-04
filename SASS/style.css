@@ -91,19 +91,19 @@
 }
 /* CSS pour les éléments d'entrée */
 .race-list:nth-child(1) .race-cards {
-  animation: appearEntrance 1.5s ease forwards;
+  animation: appearEntrance 2.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de plat */
 .race-list:nth-child(2) .race-cards {
-  animation: appearPlat 3.5s ease forwards;
+  animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de dessert */
 .race-list:nth-child(3) .race-cards {
-  animation: appearDessert 5.5s ease forwards;
+  animation: appearDessert 7.5s ease forwards;
   opacity: 0;
 }
 
@@ -439,7 +439,7 @@ body {
   padding-left: 13px;
 }
 .restaurant p {
-  margin-top: 15px;
+  margin-top: -18px;
   position: relative;
 }
 
