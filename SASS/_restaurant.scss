@@ -31,14 +31,14 @@
     &__title{
         padding: 28px;
         margin-bottom: -10px;
-        font-size: 31px;
+        font-size: 25px;
     }
     &__cards {
         display: flex;
         flex-direction: column;
         position: relative;
         height: 251px;
-        padding-bottom: 30px;
+        padding-bottom: 18px;
         margin: auto;
         margin-bottom: 18px;
         border-radius: 15px;
@@ -78,19 +78,26 @@
         -o-object-fit: cover;
         object-fit: cover;
     }
+    h4{ 
+        font-size: 21px;
+        margin-top: 47px;
+    }
+    p {
+        font-size: 18px;
+    }
     &__cards {
         &--like{
-            position: absolute;
-            
-            right: 7%;
             font-size: 25px;
-
+            position: relative;
         }
         &--info{
             font-size: 25px;
-        margin-top: -29px;
-        padding-left: 13px;
-
+            margin-top: -29px;
+            padding: 0 13px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
         }
         
     }

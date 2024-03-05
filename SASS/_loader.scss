@@ -39,6 +39,8 @@
       border-radius: 100%;
       background-color: $color-primary;
       animation: three 1s infinite ease-in-out both;
+      // indique que l'animation nommée three durera 1 seconde, se répétera indéfiniment, commencera lentement, accélérera au milieu,
+      // ralentira à la fin, et sera jouée dans les deux directions.
       animation-delay: 0ms;
    
       &__2 {

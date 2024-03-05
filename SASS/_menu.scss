@@ -26,56 +26,55 @@
         margin: auto;
     }
   
-&__heading {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    @include table__responsive {
-        width: 400px;
-        height: 41px;
+    &__heading {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        h2 {
+            width: 87%;
+            font-size: 25px;
+            font-family: "Shrikhand", cursive;
+            @include desktop__responsive {
+                display: flex;
+                font-size: 40px;
+                width: 95%;
+            }
+    
+            @include table__responsive {
+                display: flex;
+                font-size: 35px;
+                width: 95%;
+            }
+        }
+        @include table__responsive {
+            width: 400px;
+            height: 41px;
+            justify-content: center;
+        }
+
+        @include desktop__responsive {
+            width: 400px;
+            height: 41px;
+            justify-content: center;
+        }
+        &--heart {
+            position: relative;
+        }
+    }
+    &__orderbtn{
+        display: flex;
         justify-content: center;
     }
 
-    @include desktop__responsive {
-        width: 400px;
-        height: 41px;
-        justify-content: center;
-    }
-}
-&__heading h2 {
-    width: 87%;
-    font-size: 30px;
-    font-family: "Shrikhand", cursive;
-    @include desktop__responsive {
-        display: flex;
-        font-size: 40px;
-        width: 95%;
-    }
-
-    @include table__responsive {
-        display: flex;
-        font-size: 35px;
-        width: 95%;
-    }
-}
-&__orderbtn{
-    display: flex;
-    justify-content: center;
-}
-&__heading--heart{
-    position: absolute;
-    top: -182px;
-    right: 46px;
-}
-&__container{
-    margin: -10px;
-    @include table__responsive ; @include desktop__responsive{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-} 
+    &__container{
+        margin: -10px;
+        @include table__responsive ; @include desktop__responsive{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    } 
 }
 
 

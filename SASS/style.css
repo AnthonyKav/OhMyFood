@@ -48,31 +48,6 @@
   animation-delay: 450ms;
 }
 
-@keyframes heart-fill {
-  0% {
-    opacity: 0;
-    transform: scale(0.2);
-  }
-  15% {
-    opacity: 0.25;
-  }
-  80% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  85% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  95% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 /* CSS pour les éléments d'entrée */
 .race-list:nth-child(1) .race-cards {
   animation: appear 2.5s ease forwards;
@@ -136,25 +111,38 @@
   opacity: 0.88;
 }
 
+input.heart-check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  z-index: 2;
+}
+input.heart-check:checked + .button__like::after {
+  z-index: 1;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+input.heart-check:not(checked) + .button__like::after {
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 350ms ease-out;
+}
+
 .button__like {
   color: #353535;
-  top: 216px;
-  right: 2px;
   width: 50px;
   height: 50px;
   display: flex;
   border: transparent 0px solid;
   background-color: transparent;
   font-size: 35px;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.button__like:focus::after {
-  z-index: 1;
-  animation: heart-fill 900ms forwards cubic-bezier(0.65, 1.01, 0.98, 1.06);
-  position: absolute;
 }
 .button__like::after {
   z-index: -1;
@@ -359,14 +347,14 @@ body {
 .restaurant__title {
   padding: 28px;
   margin-bottom: -10px;
-  font-size: 31px;
+  font-size: 25px;
 }
 .restaurant__cards {
   display: flex;
   flex-direction: column;
   position: relative;
   height: 251px;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
   margin: auto;
   margin-bottom: 18px;
   border-radius: 15px;
@@ -406,15 +394,25 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.restaurant h4 {
+  font-size: 21px;
+  margin-top: 47px;
+}
+.restaurant p {
+  font-size: 18px;
+}
 .restaurant__cards--like {
-  position: absolute;
-  right: 7%;
   font-size: 25px;
+  position: relative;
 }
 .restaurant__cards--info {
   font-size: 25px;
   margin-top: -29px;
-  padding-left: 13px;
+  padding: 0 13px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .restaurant p {
   margin-top: -17px;
@@ -543,23 +541,9 @@ body {
   align-items: center;
   margin: auto;
 }
-@media all and (min-width: 768px) {
-  .slight__heading {
-    width: 400px;
-    height: 41px;
-    justify-content: center;
-  }
-}
-@media all and (min-width: 1024px) {
-  .slight__heading {
-    width: 400px;
-    height: 41px;
-    justify-content: center;
-  }
-}
 .slight__heading h2 {
   width: 87%;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Shrikhand", cursive;
 }
 @media all and (min-width: 1024px) {
@@ -576,14 +560,26 @@ body {
     width: 95%;
   }
 }
+@media all and (min-width: 768px) {
+  .slight__heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1024px) {
+  .slight__heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+.slight__heading--heart {
+  position: relative;
+}
 .slight__orderbtn {
   display: flex;
   justify-content: center;
-}
-.slight__heading--heart {
-  position: absolute;
-  top: -182px;
-  right: 46px;
 }
 .slight__container {
   margin: -10px;
