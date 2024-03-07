@@ -349,6 +349,13 @@ body {
   margin-bottom: -10px;
   font-size: 25px;
 }
+@media all and (min-width: 1024px) {
+  .restaurant__title {
+    max-width: 75%;
+    margin: auto auto -10px auto;
+    width: 100%;
+  }
+}
 .restaurant__cards {
   display: flex;
   flex-direction: column;
@@ -402,8 +409,10 @@ body {
   font-size: 18px;
 }
 .restaurant__cards--like {
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
   font-size: 25px;
-  position: relative;
 }
 .restaurant__cards--info {
   font-size: 25px;

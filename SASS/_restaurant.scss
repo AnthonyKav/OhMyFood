@@ -4,7 +4,7 @@
    
     background-color: $LightGray;
     
-
+    
     &__bloc {
         width: 90%;
         margin: auto;
@@ -28,10 +28,15 @@
             gap: 40px;        
         }
     }
-    &__title{
+    &__title {
         padding: 28px;
         margin-bottom: -10px;
         font-size: 25px;
+        @include desktop__responsive {
+            max-width: 75%;
+            margin: auto auto -10px auto;
+            width: 100%;
+        }
     }
     &__cards {
         display: flex;
@@ -87,8 +92,10 @@
     }
     &__cards {
         &--like{
+            position: absolute;
+            right: 10px;
+            bottom: 25px;
             font-size: 25px;
-            position: relative;
         }
         &--info{
             font-size: 25px;

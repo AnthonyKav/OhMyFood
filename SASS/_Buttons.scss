@@ -66,10 +66,7 @@ input.heart-check {
         color: transparent;
         @include gradient(45deg);
         background-clip: text;
-        // propriété qui délimite le remplissage au contour du texte ( ici une icône )
         transform-origin: bottom;
-        // Ici sertr à indiquer le remplissae se fait par le bas 
-
     }
 }
 
